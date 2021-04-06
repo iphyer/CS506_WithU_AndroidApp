@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">WithU</string>
+    <string name="default_notification_channel_id">misc</string>
+    <string name="default_notification_channel_name">Miscellaneous</string>
+    <string name="email">E-mail</string>
+    <string name="request">Request</string>
+    <string name="password">Password</string>
+    <string name="min_password">Password must be at least 6 characters!</string>
+    <string name="remember_me">Remember me</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="example_email">email@wisc.edu</string>
+    <string name="example_password">password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_password_invalid">"Please enter a valid UW e-mail address."</string>
+    <string name="forgot_password_failure">"Couldn't send email! Please check the email entered."</string>
+    <string name="forgot_password_success">"Password reset e-mail sent…"</string>
+    <string name="register">Register</string>
+    <string name="register_as_walker">Register as Walker</string>
+    <string name="password_recovery">Please Enter Your E-mail for Password Recovery</string>
+    <string name="submit">Submit</string>
+    <string name="settings">Settings</string>
+    <string name="history">Your trip history</string>
+    <string name="first_name">First Name</string>
+    <string name="unpair">Unpair</string>
+    <string name="help">Help</string>
+    <string name="switch_to_walker">Switch to Walker</string>
+    <string name="switch_to_user">Switch to User</string>
+    <string name="last_name">Last Name</string>
+    <string name="gender">Gender</string>
+    <string name="phone_number">Phone #</string>
+    <string name="re_enter_password">Re-enter Password</string>
+    <string name="title_activity_user_main">Home</string>
+    <string name="title_activity_walker_main">WalkerMain</string>
+    <string name="open">Open</string>
+    <string name="splash_name">WITHU</string>
+    <string name="close">Close</string>
+    <string name="email_title">" @wisc.edu"</string>
+    <string name="EULAtxt">By clicking here you agreeing to the terms of our <a href="https://tinyurl.com/yakkgqxb">End User License agreement</a></string>
+
+    <!--Main Activity-->
+    <string name="main_register_button">Register</string>
+    <string name="main_register_label">Let US walk U</string>
+    <string name="main_login_button">Sign-in</string>
+    <string name="main_login_label">Already registered with us?</string>
+    <string name="main_image_desc">Product Logo</string>
+
+    <!--Registration Activity-->
+    <string name="register_activity_title">Sign-up</string>
+    <string name="register_male">Male</string>
+    <string name="register_female">Female</string>
+    <string name="register_failure">Error creating account. Please try again.</string>
+    <string name="register_spinner_label">Registering…</string>
+
+    <!--User Main Activity-->
+    <string name="user_main_title">Home</string>
+    <string name="user_main_destination">Where to?</string>
+    <string name="user_main_spinner_label">Searching for Walkers…</string>
+    <string name="user_main_button_request">Request Walk</string>
+    <string name="user_main_marker_from">You are here</string>
+    <string name="user_main_marker_to">Destination</string>
+    <string name="user_main_marker_to_estimate">%1$s (%2$s) away</string>
+
+    <!--User Waiting Activity-->
+    <string name="user_waiting_waiting_title">Waiting</string>
+    <string name="user_waiting_starting_title">En-route</string>
+    <string name="user_waiting_reached_title">Reached</string>
+    <string name="user_waiting_waiting_description">2 walkers have confirmed and are en-route</string>
+    <string name="user_waiting_starting_description">The walkers are here, lets navigate home</string>
+    <string name="user_waiting_reached_description">You have reached your destination</string>
+    <string name="user_waiting_button_navigate">Navigate</string>
+    <string name="user_waiting_button_report">Report</string>
+    <string name="user_waiting_menu_option_cancel">Cancel Walk</string>
+    <string name="user_waiting_menu_option_report">Report</string>
+    <string name="user_waiting_menu_option_back">Back</string>
+    <string name="user_waiting_contact_desc">%1$s [%2$s, %3$s]</string>
+    <string name="user_waiting_marker_info">Meet here</string>
+    <string name="user_waiting_marker_dest">Destination</string>
+    <string name="user_waiting_marker_estimate_title">%1$s</string>
+    <string name="user_waiting_marker_estimate_snippet">%1$s away</string>
+    <string name="user_waiting_dialog_cancel_title">Are you sure?</string>
+    <string name="user_waiting_dialog_cancel_description">Would you like to terminate the walk and ask the walkers to return?</string>
+    <string name="user_waiting_dialog_cancel_action_positive">No</string>
+    <string name="user_waiting_dialog_cancel_action_negative">Yes</string>
+    <string name="user_waiting_dialog_cancel_action_neutral">Go Back</string>
+    <string name="user_waiting_dialog_logout_title">Are you sure?</string>
+    <string name="user_waiting_dialog_logout_description">Do you want to terminate the current walk and logout?</string>
+    <string name="user_waiting_dialog_logout_action_negative">Cancel and Logout</string>
+    <string name="user_waiting_dialog_logout_action_neutral">Nevermind</string>
+    <string name="user_waiting_dialog_arrived_title">"Let's get going..."</string>
+    <string name="user_waiting_dialog_arrived_description">"Your walkers are here, so let's start walking to your destination."</string>
+    <string name="user_waiting_dialog_arrived_action_positive">Navigate</string>
+    <string name="user_waiting_dialog_arrived_action_negative">Call</string>
+    <string name="user_waiting_dialog_arrived_action_neutral">Dismiss</string>
+    <string name="user_waiting_dialog_call_title">Who would you like to contact?</string>
+    <string name="user_waiting_dialog_call_desc">Please note that your regular call charges will apply on this call.</string>
+    <string name="user_waiting_dialog_call_action_desc">Call %1$s</string>
+    <string name="user_waiting_dialog_reached_title">"You've reached!"</string>
+    <string name="user_waiting_dialog_reached_description">"Please rate your walking-pair so that we can improve our services going forward."</string>
+    <string name="user_waiting_dialog_reached_action_positive">Submit</string>
+    <string name="user_waiting_dialog_reached_error">Please rate the walkers before submitting.</string>
+
+    <string name="user_report_dialog_call_title">Need Help?</string>
+    <string name="user_report_dialog_call_desc">You can reach out to our 24x7 Support Team at these numbers. Please note that your regular call charges will apply on this call.</string>
+    <string name="user_report_dialog_call_action">Call Customer Support</string>
+
+    <!--Login Activiry-->
+    <string name="login_activity_title">Log-In</string>
+    <string name="login_submit_button">Login</string>
+    <string name="login_spinner_label">Authenticating…</string>
+    <string name="login_failure_parsing">"Please check the information you've entered!"</string>
+    <string name="login_failure_authentication">"Email and password didn't match. Please try again."</string>
+
+    <!--Trip History Activiry-->
+    <string name="trip_history_title">Your Trip History</string>
+    <string name="trip_history_activity_refresh">Something went wrong! Click the refresh button to try again.</string>
+    <string name="trip_history_activity_date_time">%1$s @ %2$s</string>
+    <string name="trip_history_activity_rating">RATED</string>
+
+</resources>

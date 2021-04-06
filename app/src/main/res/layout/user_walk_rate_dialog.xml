@@ -1,0 +1,33 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <RatingBar
+        android:id="@+id/userWalk_rateDialog_ratingBar"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:progressTint="@color/colorAccentLight"
+        android:secondaryProgressTint="@color/colorAccentLight"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userWalk_rateDialog_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="4dp"
+        android:text="@string/user_waiting_dialog_reached_error"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccentLight"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/userWalk_rateDialog_ratingBar"
+        app:layout_constraintStart_toStartOf="@+id/userWalk_rateDialog_ratingBar"
+        app:layout_constraintTop_toBottomOf="@+id/userWalk_rateDialog_ratingBar" />
+
+</android.support.constraint.ConstraintLayout>
