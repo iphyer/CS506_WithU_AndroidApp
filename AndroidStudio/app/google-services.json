@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "973673153995",
+    "firebase_url": "https://withu-5062017.firebaseio.com",
+    "project_id": "withu-5062017",
+    "storage_bucket": "withu-5062017.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973673153995:android:27dac7afb099a8c3",
+        "android_client_info": {
+          "package_name": "com.withullc.app.withu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973673153995-g67a3t0deeeiqefhj1ua56cktn7mogki.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.withullc.app.withu",
+            "certificate_hash": "2b55127caf4921ea29f4f5e1072416c6e1b40808"
+          }
+        },
+        {
+          "client_id": "973673153995-e40nedmso4mhptl15i9o4djnvvq3hm9o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2_eWCSgYOVP2cJ1cS7rU91wvYnBiLiMk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "973673153995-e40nedmso4mhptl15i9o4djnvvq3hm9o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

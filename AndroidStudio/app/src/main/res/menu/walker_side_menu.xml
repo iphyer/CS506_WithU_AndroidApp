@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/walker_side_history"
+        android:onClick="yourTripHistory"
+        android:title="@string/history" />
+
+    <item android:id="@+id/walker_side_unpair"
+        android:title="@string/unpair" />
+
+    <item
+        android:id="@+id/walker_side_switch"
+        android:onClick="switchToUser"
+        android:title="@string/switch_to_user" />
+
+    <item
+        android:id="@+id/walker_side_help"
+        android:onClick="help"
+        android:title="@string/help" />
+
+    <item
+        android:id="@+id/walker_side_settings"
+        android:onClick="settings"
+        android:title="@string/settings" />
+
+    <item
+        android:id="@+id/walker_side_logout"
+        android:onClick="logout"
+        android:title="@string/logout" />
+
+</menu>

@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.withullc.app.withu"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+            returnDefaultValues = true
+        }
+    }
+}
+
+def firebaseVersion = '10.0.1'
+def powerMockVersion = '1.7.3'
+def roboElectricVersion = '3.5.1'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    // TODO shantanu inspect noinspection GradleCompatible tags
+    //noinspection GradleCompatible
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support:design:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.google.android.gms:play-services:11.2.0'
+    compile 'com.google.android.gms:play-services-maps:11.2.0'
+    compile 'com.google.android.gms:play-services-places:11.2.0'
+    compile 'com.google.android.gms:play-services-location:11.2.0'
+    compile "com.google.android.gms:play-services-auth:11.2.0"
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    // Firebase dependencies
+    compile "com.google.firebase:firebase-auth:$firebaseVersion"
+    compile "com.google.firebase:firebase-core:$firebaseVersion"
+    compile "com.google.firebase:firebase-database:$firebaseVersion"
+    compile 'com.firebase:firebase-jobdispatcher:0.8.4'
+    compile "com.google.firebase:firebase-messaging:$firebaseVersion"
+    // UI libraries
+    compile 'com.github.ybq:Android-SpinKit:1.1.0'
+    compile 'com.github.javiersantos:MaterialStyledDialogs:2.1'
+    compile 'com.mobsandgeeks:android-saripaar:2.0.3'
+    // Testing dependencies
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-core:2.8.47'
+    testCompile 'org.hamcrest:hamcrest-all:1.3'
+    // PowerMock dependencies
+    testCompile "org.powermock:powermock-api-mockito2:$powerMockVersion"
+    testCompile "org.powermock:powermock-module-junit4:$powerMockVersion"
+    testCompile "org.powermock:powermock-module-junit4-rule:$powerMockVersion"
+    testCompile "org.powermock:powermock-classloading-xstream:$powerMockVersion"
+    // RoboElectric dependencies
+    testCompile "org.robolectric:robolectric:$roboElectricVersion"
+    testCompile "org.robolectric:shadows-httpclient:$roboElectricVersion"
+    // AndroidJUnitRunner and JUnit Rules
+    androidTestCompile 'com.android.support.test:runner:1.0.1'
+    androidTestCompile 'com.android.support.test:rules:1.0.1'
+    // Espresso dependencies
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:3.0.1'
+    androidTestCompile 'com.android.support.test:runner:1.0.1'
+    androidTestCompile 'com.android.support.test.espresso:espresso-intents:3.0.1'
+}
+
+apply plugin: 'com.google.gms.google-services'
